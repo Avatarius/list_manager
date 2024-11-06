@@ -1,0 +1,11 @@
+@use "../../styles/mixins/flex.scss";
+
+.container {
+  font-size: 32px;
+  // @include flex.flex(space-between, center);
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px 10px 20px;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,38 @@
+@use "../../styles/mixins/flex.scss";
+
+.container {
+  background-color: #fff;
+  min-block-size: 100dvh;
+  @include flex.flex(column, flex-start, stretch);
+}
+
+.main {
+  flex-grow: 1;
+  @include flex.flex(row, unset, stretch);
+
+  &__item {
+    flex: 0 0 auto;
+  }
+
+  &__handler {
+    flex: 0 0 auto;
+    cursor: ew-resize;
+    inline-size: 20px;
+  }
+
+  &__handler::before {
+    content: "";
+    display: block;
+    margin-inline: auto;
+    background-color: #000;
+    inline-size: 4px;
+    block-size: 100%;
+  }
+
+  &__left {
+    min-inline-size: 250px;
+  }
+
+  &__right {
+  }
+}

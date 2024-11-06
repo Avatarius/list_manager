@@ -1,0 +1,9 @@
+@use './mixins/flex.scss';
+@use "../fonts/font.scss";
+@use "../styles/reset.scss";
+
+
+body {
+  background-color: #afafaf;
+  font-family: Montserrat, sans-serif;
+}
